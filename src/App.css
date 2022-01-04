@@ -1,32 +1,210 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  overflow: hidden;
+  height: 100vh;
+  /* padding: 0.5em; */
+
+}
+
+h1{
+  /* position:; */
+  top: 1em;
+  /* margin: 1em; */
+  margin: 0;
+  font-family: fontif-smallcaps;
+  text-align: center;
+}
+
+.rewards {
+  margin: white;
+  margin: 5px;
+} 
+
+@font-face {
+  font-family: "fontif";
+  src: local('fontif'), url(./font/Fontin-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "fontif-bold";
+  src: local('fontif-bold'), url(./font/Fontin-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "fontif-italic";
+  src: local('fontif-italic'), url(./font/Fontin-Italic.otf) format("opentype");
+}
+@font-face {
+  font-family: "fontif-smallcaps";
+  src: local('fontif-smallcaps'), url(./font/Fontin-SmallCaps.otf) format("opentype");
+}
+
+*{
+  font-family: fontif, Arial;
+}
+
+.addPadding {
+  padding:3vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+ul {
+  list-style-type: none;
+}
+li {
+  /* margin: 5px 0; */
+  padding: 5px;
+}
+img.durability {
+  height: 1.5em;
+  width: 1.5em;
+  padding: .25em;
+}
+img.Type-Image {
+  max-width: 1vh;
+  /* width: 2em; */
+  align-self: center;
+  
+}
 
+img.player{
+  /* transition: all 2s ease-in; */
+}
+img.damage{
+  height: 2em;
+}
+img.damageExplicit{
+  height: 2em;
+  padding: 0.25em;
+  background-color:blue;
+  border-radius: 90%;
+}
+img.Item-Image {
+  height: 9em;
+  /* width: 8em; */
+}
+img.off{
+  /* transform: scale(0.8); */
+  max-width: 2.5em;
+  padding: 0.5em;
+}
+
+img.choice{
+  max-width: 2em;
+}
+
+
+
+img.on{
+   /* transform: scale(1.2) */
+  max-width: 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: white;
+  border-width: 4px;
+  border-style:ridge;
+  border-radius: 5px;
+}
+img.stairs{
+  max-width: 3em;
+}
+.staffFloor{
+  height: 5vh;
+  padding: 2vh;
+
+
+  
+}
+
+img.map{
+  padding: 1em;
+  max-width: 100%;
+  position: relative;
+  top: 1em;
+}
+.staff{
+  position: relative;
+  max-height: 60%;
+  top: 20%;
+  max-width: 100%;
+  /* padding: 1em; */
+  border-radius: 1em;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.staff-select-button{
+  top: 40%;
+  height: 20%;
+}
+.card-container{  overflow-y: scroll; 
+  height: 90vh
+}
+.staff-container{  overflow-y: scroll; 
+  height: 90vh
+}
+
+
+.cardMagic {
+  background: #A0B6BB;
+}
+.cardRare {
+  background-color: #F4EACA;
+}
+.cardUnique{
+  background: #4d2000;
+}
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #26334b;
+  min-height: 7em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.vl{
+  padding-top: 0.5em;
+  font-size: 3em;
 }
+
+.App-content{
+  /* position: absolute; */
+  background-color: #26334b;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: left; */
+  color: white;
+  /* bottom:50px; */
+  /* top:7em; */
+  /* width: 90%; */
+  height:100vh;
+  padding: 3%;
+  /* padding:5%; */
+}
+
+
+/* .custom-appear {
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(5vw)
+} */
+.custom-enter-done {
+  transform:skewX(50)
+}
+/* .custom-appear-active { */
+  /* opacity: 1; */
+  /* z-index: 1; */
+  /* transform: translateX(20vw) */
+/* } */
+
+
 
 @keyframes App-logo-spin {
   from {
